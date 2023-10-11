@@ -6,7 +6,7 @@ A simple weather app that allows you to check the current weather and 5-day fore
 
 ## Demo
 
-You can try the Weather App [here](https://github.com/Fiqre-Ab).
+You can try the Weather App [here](https://fiqre-ab.github.io/citysky/).
 
 ## Features
 
