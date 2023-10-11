@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /*  a default font */
+  overflow-x: hidden;
+}
+.city {
+  background-color: blue;
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Search Styles */
+.search-btn {
+  width: 250px;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  background-color: green;
+  padding: 7px;
+  padding-left: 100px;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: lightblue;
+}
+
+#search {
+  width: 230px;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+/* Main Layout Styles */
+main section {
+  display: flex;
+}
+
+/* Weather Styles */
+.weather {
+  text-align: center;
+  border: 2px solid black;
+
+  padding: 30px;
+  width: 70%;
+  margin-right: 2px; /*  margin to separate them */
+  position: absolute;
+  left: 320px;
+  margin: 20px;
+}
+.weather h2,
+.weather h3,
+.weather ul {
+  margin: 0; /*margin */
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Add some left padding for spacing */
+  margin-top: 3px;
+}
+#list li {
+  text-align: center;
+  background-color: gainsboro;
+  border-radius: 4px;
+}
+
+/* Container Styles */
+.container {
+  display: none;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.containertwo {
+  display: flex;
+  justify-content: space-between; /* Space div  */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+aside {
+  text-align: center;
+  margin-top: 20px;
+}
+li {
+  margin-top: 20px;
+}
+/* ForeCast Styles */
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .weather {
+    position: static; /*  absolute positioning */
+    width: 70%; /* Take full width of the screen */
+    margin-right: 0; /* Remove the margin */
+    margin-left: 45px;
+  }
+
+  .container {
+    width: 100%; /* Take full width of the screen */
+  }
+
+  .containertwo {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the elements */
+  }
+}
+
+#list {
+  display: none;
+}
+/* ForeCast Styles */
+.foreCast {
+  /* Display the forecast */
+  text-align: center; /* Center align the forecast */
+  /* Add padding to the top for spacing */
+  margin-top: 135px;
+  top: 450px;
+  left: 340px;
+  display: none;
+}
+.forecast-container {
+  justify-content: space-between;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.forecast-item {
+  flex: 0 0 calc(20% - 20px); /* Adjust the width based on your preference */
+  border: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border within the width */
+}
