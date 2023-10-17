@@ -5,7 +5,12 @@
   box-sizing: border-box;
 }
 
+
 body {
+    background-image: url('https://via.placeholder.com/1920x1080?text=City+Sky+Background');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Arial, sans-serif; /*  a default font */
   overflow-x: hidden;
 }
